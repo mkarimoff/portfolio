@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      />
+    </noscript>
+    <!-- Preload Boxicons -->
+    <link
+      rel="preload"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Preload images -->
+    <link rel="preload" href="assets/img/my-home-photo.webp" as="image" />
+    <link rel="preload" href="assets/img/my-about-photo.webp" as="image" />
+    <link rel="preload" href="assets/img/work1.png" as="image" />
+    <link rel="preload" href="assets/img/work2.png" as="image" />
+    <link rel="preload" href="assets/img/image3.png" as="image" />
+    <link
+      rel="preload"
+      href="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+      as="image"
+    />
+    <title>Muhammad Karimoff | Full-Stack Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Karimoff, a full-stack web developer skilled in React, Node.js, and MongoDB. Explore my projects and contact me for opportunities."
+    />
+    <meta
+      name="keywords"
+      content="Muhammad Karimoff, web developer, full-stack, React, Node.js, portfolio, South Korea"
+    />
+    <meta name="author" content="Muhammad Karimoff" />
+  </head>
+  <body data-lang="en">
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .lang-en {
+          display: inline !important;
+        }
+        .lang-ko {
+          display: none !important;
+        }
+      </style>
+    </noscript>
+
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a
+            href="#"
+            class="nav__logo lang-toggle"
+            data-lang="ko"
+            aria-label="Switch to Korean"
+            >한국어</a
+          >
+          |
+          <a
+            href="#"
+            class="nav__logo lang-toggle"
+            data-lang="en"
+            aria-label="Switch to English"
+            >English</a
+          >
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link"
+                ><span class="lang-en">Home</span
+                ><span class="lang-ko">홈</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><span class="lang-en">About</span
+                ><span class="lang-ko">소개</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><span class="lang-en">Skills</span
+                ><span class="lang-ko">기술</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link"
+                ><span class="lang-en">Work</span
+                ><span class="lang-ko">작업</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"
+                ><span class="lang-en">Contact</span
+                ><span class="lang-ko">연락처</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <section class="home bd-grid reveal" id="home">
+        <div class="home__data reveal">
+          <h1 class="home__title">
+            <span class="lang-en"
+              >Hi,<br />I'am <span class="home__title-color">Muhammad</span
+              ><br />
+              Full stack <br />
+              Web Developer</span
+            >
+            <span class="lang-ko"
+              >안녕하세요,<br />저는
+              <span class="home__title-color">무함마드 </span>입니다<br />
+              풀스택 <br />
+              웹 개발자</span
+            >
+          </h1>
+          <a href="#contact" class="button"
+            ><span class="lang-en">Contact</span
+            ><span class="lang-ko">연락하기</span></a
+          >
+        </div>
+
+        <div class="home__social reveal">
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/mkarimoff/" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <div class="home__img reveal">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="93"
+                href="assets/img/IMG_2124.jpg-removebg-preview.png"
+                alt="Muhammad Karimoff in the Home section"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="about section reveal" id="about">
+        <h2 class="section-title">
+          <span class="lang-en">About</span><span class="lang-ko">소개</span>
+        </h2>
+
+        <div class="about__container bd-grid reveal">
+          <div class="about__img">
+            <img
+              src="assets/img/background.png"
+              alt="Muhammad Karimoff, a web developer and student"
+              loading="lazy"
+            />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">
+              <span class="lang-en"
+                >Hi, I'm <strong>Muhammad Karimoff</strong></span
+              >
+              <span class="lang-ko"
+                >안녕하세요, 저는 <strong>무함마드 카리모프</strong>입니다</span
+              >
+            </h2>
+            <p class="about__text">
+              <span class="lang-en">
+                I’m a passionate <strong>web developer</strong> skilled in
+                building user-friendly applications with React, Node.js, and
+                MongoDB. Currently, I’m a 4th-year student pursuing a Bachelor’s
+                in International Trade and Commerce at Joongbu University in
+                Goyang, South Korea, with an expected graduation in June 2026.
+                My self-taught journey in <strong>web development</strong> began
+                with a curiosity for creating digital solutions, and I’ve since
+                built projects like Furnimall and contributed to a mobile app
+                for Korea Auto. My background in international trade equips me
+                with a unique perspective on global markets and cross-cultural
+                communication, which I apply to create inclusive and effective
+                web experiences. When I’m not coding, I enjoy exploring South
+                Korea’s vibrant tech scene and learning about new cultures. I’m
+                excited to take on internships or freelance projects to bring
+                innovative ideas to life!
+              </span>
+              <span class="lang-ko">
+                저는 리액트, 노드.js, 몽고DB를 사용해 사용자 친화적인
+                애플리케이션을 만드는 데 능숙한
+                <strong>웹 개발자</strong>입니다. 현재 한국 고양에 있는
+                중부대학교에서 국제무역 및 상업학 학사 과정을 4학년으로 공부
+                중이며, 2026년 6월 졸업 예정입니다. 디지털 솔루션을 만드는 것에
+                대한 호기심으로 시작된 <strong>웹 개발</strong> 독학 여정을 통해
+                퍼니몰 같은 프로젝트를 구축하고 코리아 오토 모바일 앱 개발에
+                기여했습니다. 국제무역 배경은 글로벌 시장과 문화 간
+                커뮤니케이션에 대한 독특한 관점을 제공하며, 이를 통해 포용적이고
+                효과적인 웹 경험을 만듭니다. 코딩하지 않을 때는 한국의 활기찬
+                테크 문화를 탐험하고 새로운 문화를 배우는 것을 즐깁니다.
+                혁신적인 아이디어를 실현하기 위해 인턴십이나 프리랜스 프로젝트에
+                도전하고 싶습니다!
+              </span>
+            </p>
+            <a href="#work" class="button">
+              <span class="lang-en">Explore My Projects</span>
+              <span class="lang-ko">내 프로젝트 보기</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section reveal" id="skills">
+        <h2 class="section-title">
+          <span class="lang-en">Skills</span><span class="lang-ko">기술</span>
+        </h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skills__content reveal">
+            <h2 class="skills__subtitle">
+              <span class="lang-en">Professional Skills</span
+              ><span class="lang-ko">전문 기술</span>
+            </h2>
+            <p class="skills__text">
+              <span class="lang-en"
+                >Technical skills and tools I use in development and
+                design.</span
+              >
+              <span class="lang-ko"
+                >개발과 디자인에 사용하는 기술 및 도구.</span
+              >
+            </p>
+            <div class="skills__scroll">
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-html5 skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">HTML5</span
+                    ><span class="lang-ko">HTML5</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-css3 skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">CSS3</span
+                    ><span class="lang-ko">CSS3</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-javascript skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">JavaScript</span
+                    ><span class="lang-ko">자바스크립트</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-typescript skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">TypeScript</span
+                    ><span class="lang-ko">타입스크립트</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-react skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">React</span
+                    ><span class="lang-ko">리액트</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-react skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">React Native</span
+                    ><span class="lang-ko">리액트 네이티브</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-code-alt skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Next.js</span
+                    ><span class="lang-ko">넥스트.js</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-code-alt skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Tailwind CSS</span
+                    ><span class="lang-ko">테일윈드 CSS</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-nodejs skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Node.js</span
+                    ><span class="lang-ko">노드.js</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-code-alt skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Express.js</span
+                    ><span class="lang-ko">익스프레스.js</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-mongodb skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">MongoDB</span
+                    ><span class="lang-ko">몽고DB</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-github skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">GitHub</span
+                    ><span class="lang-ko">깃허브</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-cloud-upload skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Vercel</span
+                    ><span class="lang-ko">버셀</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-cloud-upload skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Netlify</span
+                    ><span class="lang-ko">넷리파이</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-server skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Timeweb</span
+                    ><span class="lang-ko">타임웹</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-figma skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Figma</span
+                    ><span class="lang-ko">피그마</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-paint skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Canva</span
+                    ><span class="lang-ko">캔바</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-code-alt skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Postman</span
+                    ><span class="lang-ko">포스트맨</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content reveal">
+            <h2 class="skills__subtitle">
+              <span class="lang-en">Hard Skills</span
+              ><span class="lang-ko">하드 스킬</span>
+            </h2>
+            <p class="skills__text">
+              <span class="lang-en"
+                >Professional and personal skills that enhance my work.</span
+              >
+              <span class="lang-ko">작업을 향상시키는 전문 및 개인 스킬.</span>
+            </p>
+            <div class="skills__scroll">
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-time skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Time Management</span
+                    ><span class="lang-ko">시간 관리</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-bulb skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Problem Solving</span
+                    ><span class="lang-ko">문제 해결</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-brain skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Decision Making</span
+                    ><span class="lang-ko">의사 결정</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-brain skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Critical Thinking</span
+                    ><span class="lang-ko">비판적 사고</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-comment-detail skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Giving and Receiving Feedback</span
+                    ><span class="lang-ko">피드백 주고받기</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-group skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Teamwork</span
+                    ><span class="lang-ko">팀워크</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-bulb skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Creative Thinking</span
+                    ><span class="lang-ko">창의적 사고</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-shield skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Stress Management</span
+                    ><span class="lang-ko">스트레스 관리</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-sync skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Adaptability</span
+                    ><span class="lang-ko">적응력</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-hourglass skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Patience</span
+                    ><span class="lang-ko">인내심</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-conversation skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Negotiation</span
+                    ><span class="lang-ko">협상</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-crown skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Leadership Potential</span
+                    ><span class="lang-ko">리더십 잠재력</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-book-open skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Willingness to Learn</span
+                    ><span class="lang-ko">학습 의지</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content languages reveal">
+            <h2 class="skills__subtitle">
+              <span class="lang-en">Languages</span
+              ><span class="lang-ko">언어</span>
+            </h2>
+            <p class="skills__text">
+              <span class="lang-en"
+                >Languages I speak and my proficiency levels.</span
+              >
+              <span class="lang-ko">제가 구사하는 언어와 숙련도 수준.</span>
+            </p>
+            <div class="skills__scroll">
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-globe skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Uzbek (Native)</span
+                    ><span class="lang-ko">우즈베크어 (원어민)</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-globe skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">English (Pre-Intermediate)</span
+                    ><span class="lang-ko">영어 (초중급)</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-globe skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Korean (Elementary)</span
+                    ><span class="lang-ko">한국어 (초급)</span></span
+                  >
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bx-globe skills__icon"></i>
+                  <span class="skills__name"
+                    ><span class="lang-en">Russian (Basic)</span
+                    ><span class="lang-ko">러시아어 (기초 수준)</span></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section reveal" id="work">
+        <h2 class="section-title">
+          <span class="lang-en">Work</span><span class="lang-ko">작업</span>
+        </h2>
+
+        <div class="work__container bd-grid">
+          <!-- Project 1: Furnimall -->
+          <div class="work__img reveal">
+            <img
+              src="assets/img/work1.png"
+              alt="Furnimall E-commerce Platform"
+              loading="lazy"
+            />
+            <p class="work__description">
+              <span class="lang-en">
+                <strong>Furnimall (Self-Project)</strong><br />
+                An e-commerce platform for furniture, built with React, Node.js,
+                and MongoDB. I designed the UI and implemented the backend API
+                to handle product listings and user authentication.
+              </span>
+              <span class="lang-ko">
+                <strong>퍼니몰 (개인 프로젝트)</strong><br />
+                가구를 위한 전자상거래 플랫폼으로, 리액트, 노드.js, 몽고DB로
+                구축했습니다. UI를 디자인하고 제품 목록 및 사용자 인증을
+                처리하는 백엔드 API를 구현했습니다.
+              </span>
+            </p>
+            <a
+              href="https://furnimall.vercel.app/"
+              class="button work__button"
+              aria-label="View Furnimall E-commerce Platform"
+            >
+              <span class="lang-en">See Project</span>
+              <span class="lang-ko">프로젝트 보기</span>
+            </a>
+          </div>
+
+          <!-- Project 2: Furnimall Admin Dashboard -->
+          <div class="work__img reveal">
+            <img
+              src="assets/img/work2.png"
+              alt="Furnimall Admin Dashboard"
+              loading="lazy"
+            />
+            <p class="work__description">
+              <span class="lang-en">
+                <strong>Furnimall Admin Dashboard (Self-Project)</strong><br />
+                A dashboard for managing Furnimall’s inventory and orders,
+                developed using React and Tailwind CSS. I integrated it with the
+                backend API using Timeweb.
+              </span>
+              <span class="lang-ko">
+                <strong>퍼니몰 관리자 대시보드 (개인 프로젝트)</strong><br />
+                퍼니몰의 재고와 주문을 관리하는 대시보드로, 리액트와 테일윈드
+                CSS를 사용해 개발했습니다. 타임웹을 사용해 백엔드 API와
+                통합했습니다.
+              </span>
+            </p>
+            <a
+              href="https://furnimall-admin-dashboard.vercel.app/"
+              class="button work__button"
+              aria-label="View Furnimall Admin Dashboard"
+            >
+              <span class="lang-en">See Project</span>
+              <span class="lang-ko">프로젝트 보기</span>
+            </a>
+          </div>
+
+          <!-- Project 3: Korea Auto Mobile App -->
+          <div class="work__img reveal">
+            <img
+              src="assets/img/image3.png"
+              class="work__app-img"
+              alt="Korea Auto Mobile App Preview"
+              loading="lazy"
+            />
+            <div class="work__app-details">
+              <p class="work__description">
+                <span class="lang-en">
+                  <strong>Korea Auto Mobile App (Team Project)</strong><br />
+                  A mobile app for car services, built with React Native and
+                  integrated with a REST API. I contributed to the frontend UI
+                  and API integration, ensuring a seamless user experience.
+                </span>
+                <span class="lang-ko">
+                  <strong>코리아 오토 모바일 앱 (팀 프로젝트)</strong><br />
+                  자동차 서비스를 위한 모바일 앱으로, 리액트 네이티브로 구축하고
+                  REST API와 통합했습니다. 프론트엔드 UI와 API 통합에 기여해
+                  원활한 사용자 경험을 보장했습니다.
+                </span>
+              </p>
+              <div style="display: flex; gap: 12px">
+                <a
+                  href="https://apps.apple.com/kr/app/korea-auto/id6738042552?l=en-GB"
+                  aria-label="Download Korea Auto on the App Store"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <button
+                    style="
+                      background-color: #000;
+                      color: white;
+                      border: none;
+                      border-radius: 10px;
+                      padding: 10px 16px;
+                      font-size: 16px;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      cursor: pointer;
+                    "
+                  >
+                    <i class="fab fa-apple"></i>
+                    App Store
+                  </button>
+                </a>
+
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.urckoreaauto.app&pcampaignid=web_share"
+                  aria-label="Get Korea Auto on Google Play"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <button
+                    style="
+                      background-color: #3bcc4a;
+                      color: white;
+                      border: none;
+                      border-radius: 10px;
+                      padding: 10px 16px;
+                      font-size: 16px;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      cursor: pointer;
+                    "
+                  >
+                    <i class="fab fa-google-play"></i>
+                    Google Play
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section reveal" id="contact">
+        <h2 class="section-title">
+          <span class="lang-en">Contact</span
+          ><span class="lang-ko">연락처</span>
+        </h2>
+
+        <div class="contact__container bd-grid reveal">
+          <form action="" class="contact__form">
+            <input
+              type="text"
+              placeholder="+8210-6505-1909"
+              class="contact__input"
+              readonly
+            />
+            <input
+              type="mail"
+              placeholder="karimoffmukhammad@gmail.com"
+              class="contact__input"
+              readonly
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <p class="footer__title">
+        <span class="lang-en">Muhammad Karimoff</span>
+        <span class="lang-ko">무함마드 카리모프</span>
+      </p>
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com/search/top/?q=Muhammad%20Karimov"
+          class="footer__icon"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/m_karimoff/" class="footer__icon"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+      </div>
+      <p class="footer__copy">
+        <span class="lang-en"
+          >Building the future, one line of code at a time.</span
+        >
+        <span class="lang-ko">한 줄의 코드로 미래를 만들어갑니다.</span>
+      </p>
+    </footer>
+
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>
